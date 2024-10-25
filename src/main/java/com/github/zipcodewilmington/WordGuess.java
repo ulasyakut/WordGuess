@@ -1,28 +1,22 @@
 package com.github.zipcodewilmington;
 
 
+import java.util.Arrays;
 
 //Ulas Yakut
 public class WordGuess {
 
-//   instance variables
-//   private String make;
-//   private String model;
-//   private int year;
-//   private int mileage;
+
+//    instance variables
+//    private char input;
+//    private String model;
+//    private int year;
+//    private int mileage;
+      String[] words = {"dog", "cat", "cup", "git"};
+
 //constructors
-//   public Car(String make, String model, int year, int mileage) {
-//      this.make = make;
-//      this.model = model;
-//      this.year = year;
-//      this.mileage = mileage;
-
-
-
-
-
-
-
+//   public WordGuess(String make, String model, int year, int mileage) {
+//   }
 
 
 
@@ -31,5 +25,13 @@ public class WordGuess {
       //game.runGame();
 
       System.out.println("try");
+      //String[] words = {"dog", "cat", "cup", "git"};
+      //System.out.println(Arrays.toString(words));
+
    }
+
+
+
+
+
 }
