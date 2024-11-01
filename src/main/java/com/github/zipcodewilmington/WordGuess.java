@@ -1,34 +1,28 @@
 package com.github.zipcodewilmington;
 
 
-import java.util.Arrays;
+import java.util.Random;
 
 //Ulas Yakut
 public class WordGuess {
 
 
-//    instance variables
-//    private char input;
-//    private String model;
-//    private int year;
-//    private int mileage;
-      String[] words = {"dog", "cat", "cup", "git"};
+    public static void main(String[] args){
 
-//constructors
-//   public WordGuess(String make, String model, int year, int mileage) {
-//   }
-
-
-
-   public static void main(String[] args){
-      //Wordguess game = new Wordguess();
-      //game.runGame();
-
-      System.out.println("try");
-      //String[] words = {"dog", "cat", "cup", "git"};
-      //System.out.println(Arrays.toString(words));
+        int numOfTries = chosenWord().length();
+        System.out.println("Welcome to Word Guess game\nThe word has "+chosenWord().length()+" words");
+        Hangman.hangman();
 
    }
+
+   public static String chosenWord(){
+       String[] words = {"dog", "cat", "cup", "git"};
+       Random rand = new Random();
+       int number = rand.nextInt(3);
+       String word = words[number];
+       return word;
+   }
+
 
 
 
