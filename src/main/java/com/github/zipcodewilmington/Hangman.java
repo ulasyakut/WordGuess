@@ -19,10 +19,18 @@ public class Hangman {
         solution = WordGuess.chosenWord().toCharArray();
         System.out.println(solution);
         Scanner sc = new Scanner(System.in);
-        System.out.println("Type your try ");
+        System.out.println("Type your character ");
         char c = sc.next().charAt(0);
 
-        for (int i=0;i<WordGuess.chosenWord().length();i++){
+
+
+
+
+
+
+
+
+        /*for (int i=0;i<WordGuess.chosenWord().length();i++){
             if(c == solution[i]){
                 userGuess[i]=c;
                 System.out.println("You guess is correct!");
@@ -30,7 +38,7 @@ public class Hangman {
             }
             else {
                 System.out.println("Try one more time!");
-            }
+            }*/
         }
 
 
@@ -40,6 +48,6 @@ public class Hangman {
     }
 
 
-    }
+
 
 

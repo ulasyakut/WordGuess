@@ -18,14 +18,10 @@ public class WordGuess {
    public static String chosenWord(){
        String[] words = {"dog", "cat", "cup", "git"};
        Random rand = new Random();
-       int number = rand.nextInt(3);
+       int number = rand.nextInt(4);
        String word = words[number];
        return word;
    }
-
-
-
-
 
 
 }
